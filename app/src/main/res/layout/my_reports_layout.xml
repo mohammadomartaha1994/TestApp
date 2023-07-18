@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_blue"
+            android:layout_marginEnd="@dimen/size_5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_bookmark"
+                android:id="@+id/ivBookmark"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/size_32dp"
+                app:tint="@color/color_3D3270" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_profile"
+                android:id="@+id/ivIconProfile"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/color_3D3270"
+                android:layout_marginTop="@dimen/size_36dp"
+                android:layout_marginStart="@dimen/size_16dp" />
+
+            <TextView
+                android:text="@string/astro_psychological_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportTitle"
+                android:textColor="@color/color_3D3270"
+                android:paddingHorizontal="@dimen/size_16dp"
+                android:textSize="@dimen/size_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivIconProfile"
+                android:layout_marginTop="@dimen/size_16dp" />
+
+            <TextView
+                android:text="@string/body_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportBody"
+                android:textSize="@dimen/size_10sp"
+                android:paddingHorizontal="@dimen/size_16dp"
+                android:textColor="@color/color_403572"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingBottom="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_12dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_green"
+            android:layout_marginStart="@dimen/size_5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_bookmark"
+                android:id="@+id/ivBookmarkMonthlyReport"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/size_32dp"
+                app:tint="@color/color_479696" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_calendar"
+                android:id="@+id/ivIconProfileMonthlyReport"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/color_479696"
+                android:layout_marginTop="@dimen/size_36dp"
+                android:layout_marginStart="@dimen/size_16dp" />
+
+            <TextView
+                android:text="@string/monthly_prediction_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportTitleMonthlyReport"
+                android:textColor="@color/color_479696"
+                android:paddingHorizontal="@dimen/size_16dp"
+                android:textSize="@dimen/size_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivIconProfileMonthlyReport"
+                android:layout_marginTop="@dimen/size_16dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:text="@string/body_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportBodyMonthlyReport"
+                android:textSize="@dimen/size_10sp"
+                android:textColor="@color/color_8DAEAE"
+                android:paddingHorizontal="@dimen/size_16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportTitleMonthlyReport"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/size_12dp"
+                android:paddingBottom="@dimen/size_20dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_red"
+            android:layout_marginEnd="@dimen/size_5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_bookmark"
+                android:id="@+id/ivBookmarkDailyPrediction"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/size_32dp"
+                app:tint="@color/color_FF5D50" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_check_square"
+                android:id="@+id/ivIconProfileDailyPrediction"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/size_36dp"
+                android:layout_marginStart="@dimen/size_16dp" />
+
+            <TextView
+                android:text="@string/daily_prediction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportTitleDailyPrediction"
+                android:textColor="@color/color_FF5648"
+                android:paddingHorizontal="@dimen/size_16dp"
+                android:textSize="@dimen/size_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivIconProfileDailyPrediction"
+                android:layout_marginTop="@dimen/size_16dp" />
+
+            <TextView
+                android:text="@string/body_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportBodyDailyPrediction"
+                android:textSize="@dimen/size_10sp"
+                android:paddingHorizontal="@dimen/size_16dp"
+                android:textColor="@color/color_A27A7A"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportTitleDailyPrediction"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingBottom="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_12dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_pink"
+            android:layout_marginStart="@dimen/size_5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_bookmark"
+                android:id="@+id/ivBookmarkLoveReport"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/size_32dp"
+                app:tint="@color/color_C93F8D" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_heart"
+                android:id="@+id/ivIconProfileLoveReport"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/color_C93F8D"
+                android:layout_marginTop="@dimen/size_36dp"
+                android:layout_marginStart="@dimen/size_16dp" />
+
+            <TextView
+                android:text="@string/love_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportTitleLoveReport"
+                android:textColor="@color/color_C93F8D"
+                android:paddingHorizontal="@dimen/size_16dp"
+                android:textSize="@dimen/size_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivIconProfileLoveReport"
+                android:layout_marginTop="@dimen/size_16dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:text="@string/body_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReportBodyLoveReport"
+                android:textSize="@dimen/size_10sp"
+                android:textColor="@color/color_E791BE"
+                android:paddingHorizontal="@dimen/size_16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvReportTitleLoveReport"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/size_12dp"
+                android:paddingBottom="@dimen/size_20dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</LinearLayout>
